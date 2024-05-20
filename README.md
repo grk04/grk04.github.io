@@ -1,5 +1,5 @@
 
-gunashree.rajendra04@gmail.com | Seattle, Washington (open to relocate) | (206) 739-4232 | linkedin.com/in/gunashree04/ | https://github.com/grk04 
+gunashree.rajendra04@gmail.com | Seattle, Washington (open to relocate) | (206) 739-4232 | https://linkedin.com/in/gunashree04/ | https://github.com/grk04 
 
 SUMMARY
 As a software engineer, I bring a wealth of experience in 4 years of software development & 3 years of testing, spanning cloud-computing platforms, payments, and enterprise products. Expertise in C, Java Spring, Oracle Cloud Security, SQL & Python. 
