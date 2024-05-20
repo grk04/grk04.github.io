@@ -2,14 +2,17 @@
 gunashree.rajendra04@gmail.com | Seattle, Washington (open to relocate) | (206) 739-4232 | https://linkedin.com/in/gunashree04/ | https://github.com/grk04 
 
 SUMMARY
+
 As a software engineer, I bring a wealth of experience in 4 years of software development & 3 years of testing, spanning cloud-computing platforms, payments, and enterprise products. Expertise in C, Java Spring, Oracle Cloud Security, SQL & Python. 
 
 EDUCATION
+
   Masters of Science in Information Management - Data Science (Sep 2023 – Jun 2024)    
   University of Washington, Seattle, WA 	
   Relevant Coursework: Predictive Modeling and Machine Learning, AI, Python Programming, System Design & Data structures
   
 SKILLS
+
   Languages (Proficient): Java, SQL, Spring Boot, Perl, Python, C++, JavaScript, React, Node, HTML, CSS,
   Languages (Familiar): C#, PhP
   Frameworks: Cucumber, Selenium, Gitlab, Mocha, Java Spring, TestNG, JUnit, Camel, Mockito, REST, JDK
@@ -18,6 +21,7 @@ SKILLS
   Relevant Skills: Cloud Infrastructure, Distributed Systems, Object-oriented design, CI/CD, Microsoft Azure
   
 TECHNICAL PROJECTS
+
   Design Similarity Detector Alaska Challenge (Technologies: Python, Matplotlib, TensorFlow) Dec 2023 – Feb 2024
 •	Developed a Convolutional Neural Network model for customers to upload design preferences, automating design validation to ensure only high-confidence designs proceed to production while enabling upcycling of existing textile waste.
 •	Led a team of 4 in devising a strategy to reduce textile waste and promote sustainable fashion, culminating in an innovative ecosystem aligning customer preferences with environmental values
@@ -31,6 +35,7 @@ TECHNICAL PROJECTS
 •	Utilized advanced metrics and algorithms to assess the relevance of code and test files to transaction changes, creating a comprehensive scoring system that accurately ranks LRGs based on their connection with modified files  
 
 PROFESSIONAL EXPERIENCE
+
   Senior Software Engineer, Wells Fargo (Bengaluru, India) Dec 2022 – Sep 2023
 •	Implemented a ground-up automation framework to process Swift payments, reducing manual testing effort by 50%
 •	Led sprint planning, conducted daily scrums, and led retrospectives to ensure effective Agile project management
@@ -50,6 +55,7 @@ PROFESSIONAL EXPERIENCE
 •	Optimized a distributed PTP app leveraging multithreading for concurrent execution saving over 80+ work hours monthly
                                                
     LEADERSHIP & DEVELOPMENT
+    
 •	Serving as a Reader/Grader at Fosters School of Business – Strategic Business Communication (Apr 2024 – Jun 2024) 
 •	Spearheaded the role of a Senior Consultant at Fosters Business Group, Seattle, WA (Jan 2024 – Apr 2024)                                                                                                                                             
 
