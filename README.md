@@ -3,13 +3,13 @@ gunashree.rajendra04@gmail.com | Seattle, Washington (open to relocate) | (206) 
 
 SUMMARY
 
-As a software engineer, I bring a wealth of experience in 4 years of software development & 3 years of testing, spanning cloud-computing platforms, payments, and enterprise products. Expertise in C, Java Spring, Oracle Cloud Security, SQL & Python. 
+As a technology professional with over 3 years of software development experience & 4 years of QA management, I offer a rich blend of expertise in developing & improving quality of consumer-facing cloud & enterprise products alongside project planning, and stakeholder collaboration. I am excited about the opportunity to apply my former experiences along with my academic exposure as a new graduate student. 
 
 EDUCATION
 
   Masters of Science in Information Management - Data Science (Sep 2023 – Jun 2024)    
   University of Washington, Seattle, WA 	
-  Relevant Coursework: Predictive Modeling and Machine Learning, AI, Python Programming, System Design & Data structures
+  Relevant Coursework: Predictive Modeling and Machine Learning, AI, Python Programming, Principles of Product/Program Management, System Design & Data structures, Management & Strategic Leadership
   
 SKILLS
 
@@ -18,7 +18,7 @@ SKILLS
   Frameworks: Cucumber, Selenium, Gitlab, Mocha, Java Spring, TestNG, JUnit, Camel, Mockito, REST, JDK
   Tools: Jenkins, Jira, Gradle, HP ALM, MS Office, Docker, Linux, Kubernetes, Azure DevOps Board, Postman
   Databases: Oracle 11g/12c, MongoDB, NoSQL, Kafka, AWS EC2, PCF, GCP
-  Relevant Skills: Cloud Infrastructure, Distributed Systems, Object-oriented design, CI/CD, Microsoft Azure
+  Relevant Skills: Cloud Infrastructure, Distributed Systems, Object-oriented design, CI/CD, Microsoft Azure, Product Strategy & Leadership, Presentations, Communication, Competitor Analysis, User Research, Agile Methodologies, User Acceptance Testing, Product Roadmap & Development
   
 TECHNICAL PROJECTS
 
