@@ -36,6 +36,9 @@ TECHNICAL PROJECTS
 
 PROFESSIONAL EXPERIENCE
 
+  Senior Consultant, Fosters Business School (Seattle, WA) Jan 2024 – Apr 2024
+•	Led market research, competitor analysis, devising strategy & product recommendations for a non-profit client in Seattle
+
   Senior Software Engineer, Wells Fargo (Bengaluru, India) Dec 2022 – Sep 2023
 •	Implemented a ground-up automation framework to process Swift payments, reducing manual testing effort by 50%
 •	Led sprint planning, conducted daily scrums, and led retrospectives to ensure effective Agile project management
