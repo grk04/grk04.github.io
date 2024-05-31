@@ -26,7 +26,7 @@ TECHNICAL PROJECTS
 •	Developed a Convolutional Neural Network model for customers to upload design preferences, automating design validation to ensure only high-confidence designs proceed to production while enabling upcycling of existing textile waste.
 •	Led a team of 4 in devising a strategy to reduce textile waste and promote sustainable fashion, culminating in an innovative ecosystem aligning customer preferences with environmental values
 
-    DoorDash Product Strategy (Skills: Notion, OKR, SWOT, MVP, Roadmap, Pitch)			     Sep 2023 – Dec 2023
+  DoorDash Product Strategy (Skills: Notion, OKR, SWOT, MVP, Roadmap, Pitch) Sep 2023 – Dec 2023
 •	Analyzed market trends, competitive offerings, and regulatory factors to define an MVP. 
 •	Published a comprehensive business plan and presented recommendations to professors and students. 
 •	Go-to-market plan including pricing, customer acquisition, and launch plan. 
