@@ -312,7 +312,7 @@
 }
 
 .skill-item {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .skill-title {
@@ -320,11 +320,14 @@
     font-weight: bold;
     color: #333;
     cursor: pointer;
-    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
 }
 
 .skill-title:hover {
-    text-decoration: underline;
+    background-color: #e6e6e6;
 }
 
 .skill-details {
@@ -332,8 +335,14 @@
     padding-left: 20px;
     font-size: 14px;
     color: #555;
-    display: none; /* Initially hidden */
+    margin-top: 10px;
+    display: none; /* Hidden by default */
 }
+
+.skill-item[open] .skill-details {
+    display: block; /* Display when <details> is open */
+}
+
 
         
     </style>
@@ -378,9 +387,9 @@
 <section id="skills">
     <h2>Skills</h2>
     <div class="skills-container">
-        <div class="skill-item">
-            <h3 class="skill-title" onclick="toggleVisibility('programming-languages')">Programming Languages</h3>
-            <ul id="programming-languages" class="skill-details">
+        <details class="skill-item">
+            <summary class="skill-title">Programming Languages</summary>
+            <ul class="skill-details">
                 <li>Java</li>
                 <li>JavaScript</li>
                 <li>SQL</li>
@@ -391,30 +400,33 @@
                 <li>CSS</li>
                 <li>XML</li>
             </ul>
-        </div>
-        <div class="skill-item">
-            <h3 class="skill-title" onclick="toggleVisibility('design-patterns')">Design and Architectural Patterns</h3>
-            <ul id="design-patterns" class="skill-details">
+        </details>
+
+        <details class="skill-item">
+            <summary class="skill-title">Design and Architectural Patterns</summary>
+            <ul class="skill-details">
                 <li>MVC</li>
                 <li>Microservices</li>
                 <li>RESTful APIs</li>
                 <li>Event-Driven Architecture</li>
                 <li>Distributed Systems</li>
             </ul>
-        </div>
-        <div class="skill-item">
-            <h3 class="skill-title" onclick="toggleVisibility('product-management')">Product/Program Management</h3>
-            <ul id="product-management" class="skill-details">
+        </details>
+
+        <details class="skill-item">
+            <summary class="skill-title">Product/Program Management</summary>
+            <ul class="skill-details">
                 <li>Product Development</li>
                 <li>Go-to-Market Strategy</li>
                 <li>Requirement Analysis</li>
                 <li>User Research</li>
                 <li>Product Roadmap</li>
             </ul>
-        </div>
-        <div class="skill-item">
-            <h3 class="skill-title" onclick="toggleVisibility('frameworks')">Frameworks</h3>
-            <ul id="frameworks" class="skill-details">
+        </details>
+
+        <details class="skill-item">
+            <summary class="skill-title">Frameworks</summary>
+            <ul class="skill-details">
                 <li>Spring</li>
                 <li>Spring Boot</li>
                 <li>Node.js</li>
@@ -428,10 +440,11 @@
                 <li>Apache Camel</li>
                 <li>Mockito</li>
             </ul>
-        </div>
-        <div class="skill-item">
-            <h3 class="skill-title" onclick="toggleVisibility('tools')">Tools</h3>
-            <ul id="tools" class="skill-details">
+        </details>
+
+        <details class="skill-item">
+            <summary class="skill-title">Tools</summary>
+            <ul class="skill-details">
                 <li>Splunk</li>
                 <li>Matplotlib</li>
                 <li>Kubernetes</li>
@@ -444,27 +457,29 @@
                 <li>Linux</li>
                 <li>Git</li>
             </ul>
-        </div>
-        <div class="skill-item">
-            <h3 class="skill-title" onclick="toggleVisibility('cloud-technologies')">Cloud Technologies</h3>
-            <ul id="cloud-technologies" class="skill-details">
+        </details>
+
+        <details class="skill-item">
+            <summary class="skill-title">Cloud Technologies</summary>
+            <ul class="skill-details">
                 <li>Oracle Cloud Infrastructure</li>
                 <li>AWS</li>
                 <li>Microsoft Azure</li>
                 <li>Docker</li>
                 <li>Containers</li>
             </ul>
-        </div>
-        <div class="skill-item">
-            <h3 class="skill-title" onclick="toggleVisibility('foundational-knowledge')">Foundational Knowledge</h3>
-            <ul id="foundational-knowledge" class="skill-details">
+        </details>
+
+        <details class="skill-item">
+            <summary class="skill-title">Foundational Knowledge</summary>
+            <ul class="skill-details">
                 <li>Computer Science fundamentals</li>
                 <li>Algorithms</li>
                 <li>Data structures</li>
                 <li>System design</li>
                 <li>OOP</li>
             </ul>
-        </div>
+        </details>
     </div>
 </section>
 
