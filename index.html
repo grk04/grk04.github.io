@@ -13,13 +13,13 @@
             color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #B31B1B; /* Coordinated color with Wells Fargo red */
             color: #fff;
             padding: 20px;
             text-align: center;
         }
         nav {
-            background-color: #444;
+            background-color: #F80000; /* Coordinated color with Oracle red */
             color: #fff;
             display: flex;
             justify-content: center;
@@ -76,14 +76,44 @@
             font-size: 14px;
         }
         footer {
-            background-color: #333;
+            background-color: #4B2E83; /* Coordinated color with University of Washington purple */
             color: #fff;
             text-align: center;
             padding: 20px;
         }
         a {
-            color: #333;
+            color: #fff;
             text-decoration: none;
+        }
+        .resume-section {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 40px 0;
+        }
+        .resume-section h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #B31B1B;
+        }
+        .resume-entry {
+            margin-bottom: 20px;
+        }
+        .resume-entry h4 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .resume-entry p {
+            font-size: 16px;
+            color: #777;
+        }
+        .resume-entry ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        .resume-entry ul li {
+            font-size: 16px;
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -92,8 +122,8 @@
 <header>
     <h1>Gunashree Rajendra Kumar</h1>
     <p>Innovative Software Engineer | Full-Stack Developer | Cloud Infrastructure Specialist</p>
-    <p>Email: <a href="mailto:gunashree.rajendra04@gmail.com">gunashree.rajendra04@gmail.com</a> | Seattle, Washington | (206) 739-4232</p>
-    <p><a href="https://linkedin.com/in/gunashree-kumar">LinkedIn</a> | <a href="https://github.com/grk04">GitHub</a></p>
+    <p>Email: <a href="mailto:gunashree.rajendra04@gmail.com" style="color: #fff;">gunashree.rajendra04@gmail.com</a> | Seattle, Washington | (206) 739-4232</p>
+    <p><a href="https://linkedin.com/in/gunashree-kumar" style="color: #fff;">LinkedIn</a> | <a href="https://github.com/grk04" style="color: #fff;">GitHub</a></p>
 </header>
 
 <nav>
@@ -159,9 +189,9 @@
 
     <section id="resume">
         <h2>Resume</h2>
-        <div class="container">
-            <h3>Professional Experience</h3>
-            <div>
+        <div class="resume-section">
+            <div class="resume-entry">
+                <h3>Professional Experience</h3>
                 <h4>Senior Software Engineer, Equity Finance</h4>
                 <p>Wells Fargo, Bengaluru, India | Dec 2021 – Sep 2023</p>
                 <ul>
@@ -173,7 +203,7 @@
                     <li>Conducted code reviews, ensured code quality, and mentored junior engineers to foster a growth-oriented culture.</li>
                 </ul>
             </div>
-            <div>
+            <div class="resume-entry">
                 <h4>Quality Assurance Engineer, Equity Finance</h4>
                 <p>Wells Fargo, Bengaluru, India | Nov 2020 – Dec 2021</p>
                 <ul>
@@ -182,7 +212,7 @@
                     <li>Collaborated cross-functionally to integrate customer feedback into trading system designs, boosting decision accuracy by 30%.</li>
                 </ul>
             </div>
-            <div>
+            <div class="resume-entry">
                 <h4>Member of Technical Staff, Oracle Cloud Infrastructure</h4>
                 <p>Oracle, Bengaluru, India | Jul 2016 – Oct 2020</p>
                 <ul>
@@ -206,4 +236,8 @@
 </div>
 
 <footer>
-    <
+    <p>&copy; 2024 Gunashree Rajendra Kumar. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
