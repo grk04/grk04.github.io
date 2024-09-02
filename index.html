@@ -123,13 +123,13 @@
         .timeline:before {
             content: '';
             position: absolute;
-            width: 6px;
+            width: 4px; /* Adjust the width of the axis line */
             background-color: #777; /* Grey axis line */
             top: 0;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%); /* Ensure the line is centered */
-            z-index: -1; /* Ensure the line is behind the timeline items */
+            z-index: 0; /* Make sure it's behind the timeline items */
         }
         
         .timeline-item {
@@ -139,6 +139,7 @@
             width: 50%;
             box-sizing: border-box;
             text-align: center; /* Center the content */
+            z-index: 1; /* Ensure the items are above the axis line */
         }
         
         .timeline-item:nth-child(odd) {
@@ -167,14 +168,14 @@
         }
         
         .timeline-item img {
-            width: 80px; /* Increase the size of the logo */
+            width: 80px; /* Size of the logo */
             height: auto;
             margin-bottom: 10px;
         }
         
         .timeline-item h4 {
             margin: 5px 0;
-            font-size: 16px; /* Smaller font size for the title */
+            font-size: 16px; /* Font size for the title */
             font-weight: bold;
             color: #333;
         }
@@ -182,17 +183,18 @@
         .timeline-item p {
             margin: 5px 0;
             color: #777;
-            font-size: 14px; /* Smaller font size for the year */
+            font-size: 14px; /* Font size for the year */
             font-weight: normal;
         }
         
         .timeline-item ul {
             margin-top: 10px;
             padding-left: 20px;
-            font-size: 14px; /* Smaller font size for bullet points */
+            font-size: 14px; /* Font size for bullet points */
             color: #555;
             text-align: left; /* Align bullet points to the left */
         }
+
 
 
         /* Contact Me Section */
