@@ -220,6 +220,59 @@
             color: #4B2E83;
         }
 
+        /* Achievements */
+        /* Achievements Section */
+.achievements-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.achievement-logo {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    margin-bottom: 5px;
+    font-size: 18px; /* Increase font size for titles */
+    font-weight: bold;
+    color: #333;
+}
+
+.description {
+    color: #555;
+    font-size: 16px; /* Increase font size for description */
+    margin-bottom: 10px;
+}
+
+.duration {
+    color: #777;
+    font-size: 14px;
+}
+
+
         /* About Me Section */
         .about-me {
             display: flex;
