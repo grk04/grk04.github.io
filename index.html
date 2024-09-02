@@ -51,27 +51,32 @@
             color: #333;
         }
         .experience-section, .education-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+    display: flex;
+    gap: 20px; /* Space between the cards */
+    justify-content: space-around; /* Adjust based on your layout needs */
+    align-items: center; /* Vertically aligns logos */
         }
         .card {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-align: center;
-            border: 1px solid #ddd;
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
         }
         .card:hover {
             transform: translateY(-10px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         }
         .company-logo, .school-logo {
-            width: 200px;
-            height: 200ox;
-            margin-bottom: 10px;
+    max-width: 250px; /* Ensure logos are the same width */
+    max-height: 250px; /* Ensure logos are the same height */
+    margin-bottom: 10px;
+    object-fit: contain; /* Maintain aspect ratio */
         }
         .title {
             margin-bottom: 5px;
@@ -229,8 +234,8 @@
 }
 
 .achievement-logo {
-    width: 200px; /* Adjust size as needed */
-    height: 200px;
+    width: 250px; /* Adjust size as needed */
+    height: 250px;
     object-fit: contain;
     margin-bottom: 10px;
     border-radius: 10px; /* Optional: Add rounded corners */
