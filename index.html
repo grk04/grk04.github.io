@@ -9,17 +9,17 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0; /* Grey background */
             color: #333;
         }
         header {
-            background-color: #B31B1B; /* Coordinated color with Wells Fargo red */
+            background-color: #4B2E83; /* UW purple */
             color: #fff;
             padding: 20px;
             text-align: center;
         }
         nav {
-            background-color: #F80000; /* Coordinated color with Oracle red */
+            background-color: #333;
             color: #fff;
             display: flex;
             justify-content: center;
@@ -76,7 +76,7 @@
             font-size: 14px;
         }
         footer {
-            background-color: #4B2E83; /* Coordinated color with University of Washington purple */
+            background-color: #333;
             color: #fff;
             text-align: center;
             padding: 20px;
@@ -85,35 +85,58 @@
             color: #fff;
             text-decoration: none;
         }
-        .resume-section {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            padding: 40px 0;
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            list-style: none;
         }
-        .resume-section h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #B31B1B;
+        .timeline:before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #B31B1B;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
         }
-        .resume-entry {
-            margin-bottom: 20px;
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
         }
-        .resume-entry h4 {
-            font-size: 20px;
-            margin-bottom: 5px;
+        .timeline-item:nth-child(odd) {
+            left: 0;
         }
-        .resume-entry p {
-            font-size: 16px;
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: #B31B1B;
+            border: 4px solid #fff;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .timeline-item:nth-child(even):before {
+            left: -17px;
+        }
+        .timeline-item h4 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .timeline-item p {
+            margin: 10px 0 0;
             color: #777;
-        }
-        .resume-entry ul {
-            margin-top: 10px;
-            padding-left: 20px;
-        }
-        .resume-entry ul li {
             font-size: 16px;
-            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -127,20 +150,15 @@
 </header>
 
 <nav>
-    <a href="#summary">Summary</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#skills-projects">Skills & Projects</a>
+    <a href="#home">Home</a>
     <a href="#resume">Resume</a>
+    <a href="#projects">Projects & Achievements</a>
 </nav>
 
 <div class="container">
-    <section id="summary">
-        <h2>Summary</h2>
+    <section id="home">
+        <h2>About Me</h2>
         <p>Innovative Software Engineer with 5+ years of experience in full-stack and backend development, specializing in cloud infrastructure and financial technology...</p>
-    </section>
-
-    <section id="experience">
         <h2>Professional Experience</h2>
         <div class="experience-section">
 
@@ -163,9 +181,7 @@
             </div>
 
         </div>
-    </section>
 
-    <section id="education">
         <h2>Education</h2>
         <div class="education-section">
 
@@ -178,66 +194,35 @@
         </div>
     </section>
 
-    <section id="skills-projects">
-        <h2>Skills & Projects</h2>
-        <p><strong>Programming Languages:</strong> Java, JavaScript, Python, C++...</p>
-        <div class="project">
-            <h3>Design Similarity AI Detector</h3>
-            <p>Developed and optimized a CNN AI model for design validation using Generative AI techniques...</p>
-        </div>
-    </section>
-
     <section id="resume">
         <h2>Resume</h2>
-        <div class="resume-section">
-            <div class="resume-entry">
-                <h3>Professional Experience</h3>
+        <ul class="timeline">
+            <li class="timeline-item">
                 <h4>Senior Software Engineer, Equity Finance</h4>
                 <p>Wells Fargo, Bengaluru, India | Dec 2021 – Sep 2023</p>
                 <ul>
                     <li>Developed and maintained scalable payments system using Java Spring Boot, leveraging message queues and MVC pattern, adhering to best practices for coding standards and system architecture.</li>
                     <li>Integrated predictive models into trading systems using TensorFlow and Keras, resulting in a 30% improvement in decision-making accuracy.</li>
                     <li>Implemented microservices architecture using Kubernetes and Docker, enabling application containerization and reducing downtime by 35%.</li>
-                    <li>Managed the full software development lifecycle, for AWS migrations, ensuring compliance with security, privacy, and accessibility standards.</li>
-                    <li>Launched 20+ RESTful APIs into the message processing system, optimizing data exchange and enhancing real-time interactions.</li>
-                    <li>Conducted code reviews, ensured code quality, and mentored junior engineers to foster a growth-oriented culture.</li>
                 </ul>
-            </div>
-            <div class="resume-entry">
+            </li>
+            <li class="timeline-item">
                 <h4>Quality Assurance Engineer, Equity Finance</h4>
                 <p>Wells Fargo, Bengaluru, India | Nov 2020 – Dec 2021</p>
                 <ul>
                     <li>Developed and tested scalable web app using Node.js, React and Selenium to book wires for trading, enhancing customer interaction by 30%.</li>
                     <li>Implemented 600+ functional, test-driven development test cases using TestNG, JUnit, and Cucumber, increasing code coverage by 70%.</li>
-                    <li>Collaborated cross-functionally to integrate customer feedback into trading system designs, boosting decision accuracy by 30%.</li>
                 </ul>
-            </div>
-            <div class="resume-entry">
+            </li>
+            <li class="timeline-item">
                 <h4>Member of Technical Staff, Oracle Cloud Infrastructure</h4>
                 <p>Oracle, Bengaluru, India | Jul 2016 – Oct 2020</p>
                 <ul>
                     <li>Developed cloud network resource management service using C++ and Java, configuring Oracle cloud infrastructure provisioning using 5+ subnets, 3+ VMs, and 2 gateways, increasing operational efficiency by 30%.</li>
                     <li>Streamlined CI/CD pipelines in containers using Docker, Kubernetes, and Jenkins, cutting Java VM deployment time by 50%.</li>
-                    <li>Enhanced system security with Python-based RESTful certificate authentication, reducing vulnerabilities by 30%.</li>
                 </ul>
-            </div>
-        </div>
+            </li>
+        </ul>
     </section>
 
-    <section id="awards">
-        <h2>Awards & Achievements</h2>
-        <p>Secured Oracle Cloud Developer award for remarkable year-round agility...</p>
-    </section>
 
-    <section id="blog">
-        <h2>Blog</h2>
-        <p>Coming soon...</p>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2024 Gunashree Rajendra Kumar. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
