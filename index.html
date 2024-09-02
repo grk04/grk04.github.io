@@ -40,26 +40,24 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
         }
         .experience-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
         .company-logo {
-            height: 30px;
-            vertical-align: middle;
-            margin-right: 10px;
+            height: 50px;
+            margin-bottom: 15px;
         }
         .experience-title {
-            display: flex;
-            align-items: center;
             margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
         }
-        .experience-title h3 {
-            margin: 0;
-        }
-        .experience-details {
-            margin-bottom: 10px;
+        .experience-duration {
+            color: #777;
+            font-size: 14px;
         }
         footer {
             background-color: #333;
@@ -93,42 +91,21 @@
         <div class="experience-section">
 
             <div class="experience-card">
-                <div class="experience-title">
-                    <img src="wells-fargo-logo.png" alt="Wells Fargo" class="company-logo">
-                    <h3>Senior Software Engineer, Equity Finance</h3>
-                </div>
-                <p class="experience-details">Wells Fargo, Bengaluru, India | Dec 2021 – Sep 2023</p>
-                <ul>
-                    <li>Developed and maintained scalable payments system using Java Spring Boot, leveraging message queues and MVC pattern, adhering to best practices for coding standards and system architecture.</li>
-                    <li>Integrated predictive models into trading systems using TensorFlow and Keras, resulting in a 30% improvement in decision-making accuracy.</li>
-                    <li>Implemented microservices architecture using Kubernetes and Docker, enabling application containerization and reducing downtime by 35%.</li>
-                </ul>
+                <img src="wells-fargo-logo.png" alt="Wells Fargo" class="company-logo">
+                <p class="experience-title">Senior Software Engineer, Equity Finance</p>
+                <p class="experience-duration">Dec 2021 – Sep 2023</p>
             </div>
 
             <div class="experience-card">
-                <div class="experience-title">
-                    <img src="oracle-logo.png" alt="Oracle" class="company-logo">
-                    <h3>Member of Technical Staff, Oracle Cloud Infrastructure</h3>
-                </div>
-                <p class="experience-details">Oracle, Bengaluru, India | Jul 2016 – Oct 2020</p>
-                <ul>
-                    <li>Developed cloud network resource management service using C++ and Java, configuring Oracle cloud infrastructure provisioning using 5+ subnets, 3+ VMs, and 2 gateways, increasing operational efficiency by 30%.</li>
-                    <li>Streamlined CI/CD pipelines in containers using Docker, Kubernetes, and Jenkins, cutting Java VM deployment time by 50%.</li>
-                    <li>Enhanced system security with Python-based RESTful certificate authentication, reducing vulnerabilities by 30%.</li>
-                </ul>
+                <img src="oracle-logo.png" alt="Oracle" class="company-logo">
+                <p class="experience-title">Member of Technical Staff, Oracle Cloud Infrastructure</p>
+                <p class="experience-duration">Jul 2016 – Oct 2020</p>
             </div>
 
             <div class="experience-card">
-                <div class="experience-title">
-                    <img src="wells-fargo-logo.png" alt="Wells Fargo" class="company-logo">
-                    <h3>Software Engineer, Equity Finance</h3>
-                </div>
-                <p class="experience-details">Wells Fargo, Bengaluru, India | Nov 2020 – Dec 2021</p>
-                <ul>
-                    <li>Developed and tested scalable web app using Node.js, React and Selenium to book wires for trading, enhancing customer interaction by 30%.</li>
-                    <li>Implemented 600+ functional, test-driven development test cases using TestNG, JUnit, and Cucumber, increasing code coverage by 70%.</li>
-                    <li>Collaborated cross-functionally to integrate customer feedback into trading system designs, boosting decision accuracy by 30%.</li>
-                </ul>
+                <img src="wells-fargo-logo.png" alt="Wells Fargo" class="company-logo">
+                <p class="experience-title">Software Engineer, Equity Finance</p>
+                <p class="experience-duration">Nov 2020 – Dec 2021</p>
             </div>
 
         </div>
