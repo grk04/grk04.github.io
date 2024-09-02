@@ -301,26 +301,41 @@
             display: flex;
             justify-content: center;
         }
-        .skills-section {
-            margin-top: 40px;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .skills-section h3 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-        .skills-section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skills-section ul li {
-            margin-bottom: 10px;
-            font-size: 14px;
-            color: #555;
-        }
+
+        /* Skills Section */
+.skills-container {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.skill-title:hover {
+    text-decoration: underline;
+}
+
+.skill-details {
+    list-style-type: none;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #555;
+    display: none; /* Initially hidden */
+}
+
+        
     </style>
     <!-- Link to Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -359,19 +374,100 @@
                 </div>
             </div>
         </div>
-
-        <div class="skills-section">
-            <h3>Skills</h3>
-            <ul>
-                <li><strong>Programming Languages:</strong> Java, JavaScript, SQL, Bash, Python, C++, HTML, CSS, XML</li>
-                <li><strong>Design and Architectural Patterns:</strong> MVC, Microservices, RESTful APIs, Event-Driven Architecture, Distributed Systems</li>
-                <li><strong>Product/Program Management:</strong> Product Development, Go-to-Market Strategy, Requirement Analysis, User Research, Product Roadmap</li>
-                <li><strong>Frameworks:</strong> Spring, Spring Boot, Node.js, AngularJS, TensorFlow, Hibernate, Cucumber, Selenium, TestNG, JUnit, Apache Camel, Mockito</li>
-                <li><strong>Tools:</strong> Splunk, Matplotlib, Kubernetes, Kafka, Jenkins, Gradle, Postman, Tableau, Google Analytics, Linux, Git</li>
-                <li><strong>Cloud Technologies:</strong> Oracle Cloud Infrastructure, AWS, Microsoft Azure, Docker, Containers</li>
-                <li><strong>Foundational Knowledge:</strong> Computer Science fundamentals, Algorithms, Data structures, System design, OOP</li>
+        
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill-item">
+            <h3 class="skill-title" onclick="toggleVisibility('programming-languages')">Programming Languages</h3>
+            <ul id="programming-languages" class="skill-details">
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>Bash</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>XML</li>
             </ul>
         </div>
+        <div class="skill-item">
+            <h3 class="skill-title" onclick="toggleVisibility('design-patterns')">Design and Architectural Patterns</h3>
+            <ul id="design-patterns" class="skill-details">
+                <li>MVC</li>
+                <li>Microservices</li>
+                <li>RESTful APIs</li>
+                <li>Event-Driven Architecture</li>
+                <li>Distributed Systems</li>
+            </ul>
+        </div>
+        <div class="skill-item">
+            <h3 class="skill-title" onclick="toggleVisibility('product-management')">Product/Program Management</h3>
+            <ul id="product-management" class="skill-details">
+                <li>Product Development</li>
+                <li>Go-to-Market Strategy</li>
+                <li>Requirement Analysis</li>
+                <li>User Research</li>
+                <li>Product Roadmap</li>
+            </ul>
+        </div>
+        <div class="skill-item">
+            <h3 class="skill-title" onclick="toggleVisibility('frameworks')">Frameworks</h3>
+            <ul id="frameworks" class="skill-details">
+                <li>Spring</li>
+                <li>Spring Boot</li>
+                <li>Node.js</li>
+                <li>AngularJS</li>
+                <li>TensorFlow</li>
+                <li>Hibernate</li>
+                <li>Cucumber</li>
+                <li>Selenium</li>
+                <li>TestNG</li>
+                <li>JUnit</li>
+                <li>Apache Camel</li>
+                <li>Mockito</li>
+            </ul>
+        </div>
+        <div class="skill-item">
+            <h3 class="skill-title" onclick="toggleVisibility('tools')">Tools</h3>
+            <ul id="tools" class="skill-details">
+                <li>Splunk</li>
+                <li>Matplotlib</li>
+                <li>Kubernetes</li>
+                <li>Kafka</li>
+                <li>Jenkins</li>
+                <li>Gradle</li>
+                <li>Postman</li>
+                <li>Tableau</li>
+                <li>Google Analytics</li>
+                <li>Linux</li>
+                <li>Git</li>
+            </ul>
+        </div>
+        <div class="skill-item">
+            <h3 class="skill-title" onclick="toggleVisibility('cloud-technologies')">Cloud Technologies</h3>
+            <ul id="cloud-technologies" class="skill-details">
+                <li>Oracle Cloud Infrastructure</li>
+                <li>AWS</li>
+                <li>Microsoft Azure</li>
+                <li>Docker</li>
+                <li>Containers</li>
+            </ul>
+        </div>
+        <div class="skill-item">
+            <h3 class="skill-title" onclick="toggleVisibility('foundational-knowledge')">Foundational Knowledge</h3>
+            <ul id="foundational-knowledge" class="skill-details">
+                <li>Computer Science fundamentals</li>
+                <li>Algorithms</li>
+                <li>Data structures</li>
+                <li>System design</li>
+                <li>OOP</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
 
         <h2>Professional Experience</h2>
 <div class="experience-section">
