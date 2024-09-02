@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gunashree Rajendra Kumar - Software Engineer Portfolio</title>
     <style>
+        /* Global Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Lato', sans-serif; /* Nicer font */
             margin: 0;
             padding: 0;
             background-color: #f0f0f0; /* Grey background */
@@ -85,10 +86,26 @@
             color: #fff;
             text-decoration: none;
         }
+
+        /* Icons Styling */
+        .icons {
+            margin-top: 20px;
+        }
+        .icons a {
+            margin: 0 10px;
+            color: #333;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .icons a:hover {
+            color: #4B2E83;
+        }
+
+        /* Timeline Styling */
         .timeline {
             position: relative;
             max-width: 800px;
-            margin: 20px auto;
+            margin: 40px auto;
             padding: 20px;
             list-style: none;
         }
@@ -103,10 +120,11 @@
             margin-left: -3px;
         }
         .timeline-item {
-            padding: 10px 40px;
+            padding: 20px 40px;
             position: relative;
             background-color: inherit;
             width: 50%;
+            box-sizing: border-box;
         }
         .timeline-item:nth-child(odd) {
             left: 0;
@@ -131,28 +149,26 @@
         }
         .timeline-item h4 {
             margin: 0;
-            font-size: 18px;
+            font-size: 22px; /* Bigger font for company name */
+            font-weight: bold;
         }
         .timeline-item p {
-            margin: 10px 0 0;
-            color: #777;
-            font-size: 16px;
-        }
-        .icons {
-            margin-top: 20px;
-        }
-        .icons a {
-            margin: 0 10px;
+            margin: 10px 0 5px;
             color: #333;
-            font-size: 24px;
-            text-decoration: none;
+            font-size: 18px; /* Bolder for role and duration */
+            font-weight: bold;
         }
-        .icons a:hover {
-            color: #4B2E83;
+        .timeline-item ul {
+            margin-top: 10px;
+            padding-left: 20px;
+            font-size: 16px; /* Regular font for bullet points */
+            color: #555;
         }
     </style>
     <!-- Link to Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
