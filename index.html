@@ -113,8 +113,7 @@
         .icons a:hover {
             color: #4B2E83;
         }
-
-      /* Timeline Styling */
+/* Timeline Styling */
 .timeline {
     position: relative;
     max-width: 800px;
@@ -128,7 +127,8 @@
     content: '';
     position: absolute;
     width: 4px;
-    background-color: #777;
+    height: 100%;
+    background: linear-gradient(#777 30%, transparent 0) center/2px 10px repeat-y; /* Dotted line effect */
     top: 0;
     bottom: 0;
     left: 50%;
@@ -144,7 +144,7 @@
     box-sizing: border-box;
     text-align: center;
     z-index: 1;
-    min-height: 100px; /* Ensures a minimum height for consistency */
+    min-height: 100px;
 }
 
 .timeline-item:nth-child(odd) {
@@ -200,15 +200,6 @@
     text-align: left;
 }
 
-/* Ensure timeline is tall enough for all content */
-.timeline {
-    display: flex;
-    flex-direction: column;
-}
-
-.timeline:before {
-    height: 100%; /* Make sure the line stretches the full height of the timeline */
-}
 
 .projects-section {
     display: grid;
