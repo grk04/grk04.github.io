@@ -114,90 +114,102 @@
             color: #4B2E83;
         }
 
-        /* Timeline Styling */
-        .timeline {
-            position: relative;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px 0;
-            list-style: none;
-            background-color: #fff;
-        }
-        
-        .timeline:before {
-            content: '';
-            position: absolute;
-            width: 4px;
-            background-color: #777;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 0;
-        }
-        
-        .timeline-item {
-            padding: 20px;
-            position: relative;
-            background-color: inherit;
-            width: 50%;
-            box-sizing: border-box;
-            text-align: center;
-            z-index: 1;
-        }
-        
-        .timeline-item:nth-child(odd) {
-            left: 0;
-        }
-        
-        .timeline-item:nth-child(even) {
-            left: 50%;
-        }
-        
-        .timeline-item:before {
-            content: '';
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            right: -12.5px;
-            background-color: #777;
-            border: 4px solid #fff;
-            top: 20px;
-            border-radius: 50%;
-            z-index: 1;
-        }
-        
-        .timeline-item:nth-child(even):before {
-            left: -12.5px;
-        }
-        
-        .timeline-item img {
-            width: 80px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        
-        .timeline-item h4 {
-            margin: 5px 0;
-            font-size: 16px;
-            font-weight: bold;
-            color: #333;
-        }
-        
-        .timeline-item p {
-            margin: 5px 0;
-            color: #777;
-            font-size: 14px;
-            font-weight: normal;
-        }
-        
-        .timeline-item ul {
-            margin-top: 10px;
-            padding-left: 20px;
-            font-size: 14px;
-            color: #555;
-            text-align: left;
-        }
+      /* Timeline Styling */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 0;
+    list-style: none;
+    background-color: #fff;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #777;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.timeline-item {
+    padding: 20px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 1;
+    min-height: 100px; /* Ensures a minimum height for consistency */
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12.5px;
+    background-color: #777;
+    border: 4px solid #fff;
+    top: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(even):before {
+    left: -12.5px;
+}
+
+.timeline-item img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.timeline-item h4 {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.timeline-item p {
+    margin: 5px 0;
+    color: #777;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.timeline-item ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+}
+
+/* Ensure timeline is tall enough for all content */
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline:before {
+    height: 100%; /* Make sure the line stretches the full height of the timeline */
+}
+
 .projects-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
